@@ -13,7 +13,7 @@ def home():
 @api.route('/predict',methods=['GET'])
 def predict():
     T=request.args.get('T')
-    T=float(N)
+    T=float(T)
     P=request.args.get('P')
     P=float(P)
     data=[[T,P]]
